@@ -1,0 +1,19 @@
+# Bypassing the Login Panel
+
+In the `login_panel_simulator.py` application, the login process is based on hardcoded credentials. Here are a few ways to bypass the login:
+
+1. **Using Hardcoded Credentials**:
+   - The simplest way to log in is to use the hardcoded credentials:
+     - Username: `admin`
+     - Password: `password`
+
+2. **Modifying the Code**:
+   - You can modify the `login_panel_simulator.py` file to change the credentials or remove the login check entirely. For example, you could comment out the `if` statement in the `login` function to allow any input to succeed.
+
+3. **Using Tools**:
+   - In a real-world scenario, attackers might use tools like Burp Suite or Postman to intercept requests and manipulate them. They could change the parameters sent to the server to bypass authentication checks.
+
+4. **Exploiting Vulnerabilities**:
+   - If the application had vulnerabilities such as SQL injection or insecure direct object references, these could be exploited to gain unauthorized access.
+
+**Important Note**: Always practice ethical hacking in a controlled environment and with permission. Understanding these concepts is crucial for improving security practices.

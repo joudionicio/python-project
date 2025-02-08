@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Result</title>
+</head>
+<body>
+    <h1>Guess Result</h1>
+    {% if guessed %}
+        <p>Congratulations! The app guessed your password '{{ password }}' in {{ attempts }} attempts.</p>
+    {% else %}
+        <p>The app could not guess your password '{{ password }}'.</p>
+    {% endif %}
+    <a href="/">Try Again</a>
+</body>
+</html>

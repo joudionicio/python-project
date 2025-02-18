@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print a table</title>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td class="noPrint">Navigate</td>
+      <td class="yesPrint">Content</td>
+      <td>My button is hidden <input type="button" value="ok" class="noPrint" onclick="window.print();"></td>
+    </tr>
+  </table>
+
+    <style media="screen">
+      .noPrint{ display: block; }
+      .yesPrint{ display: block !important; }
+    </style> 
+    <style media="print">
+      .noPrint{ display: none; }
+      .yesPrint{ display: block !important; }
+    </style>
+
+</body>
+</html>

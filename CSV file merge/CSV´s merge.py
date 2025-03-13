@@ -1,9 +1,18 @@
-import glob  # BUSQUEDA GLOBAL AL BUSCAR EL FINAL DEL ARCHIVO *.CSV, *.PDF ETC.....
-import pandas as pd  # SE IMPORTA LA LIBRERIA DE PANDA PARA LEER LOS ARCHIVOS CSV
+import mysql.connector
+import glob  
+import pandas as pd
 import os
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
+
+conn = mysql.connector.connect(
+    host="localhost",
+    database="csv_data",
+    user="dev",
+    password= "Dev2025"
+)
+cursor = conn.cursor()
 
 # se hace una carpeta vacia para almacenar los archivos y directorios para despues juntarlos en uno 
 files_csv = []
